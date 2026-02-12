@@ -1,0 +1,11 @@
+\ Nested Loops Demo
+
+0 5 DO 0 10 DO 42 EMIT LOOP CR LOOP
+
+: GRID 0 3 DO 0 8 DO 43 EMIT LOOP CR LOOP ;
+GRID
+
+0 3 DO 0 4 DO 0 5 DO 35 EMIT LOOP 32 EMIT LOOP CR LOOP
+
+." Nested loops work!" CR
+bye

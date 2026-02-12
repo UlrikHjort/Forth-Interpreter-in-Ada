@@ -1,0 +1,15 @@
+\ Test: Word definitions
+\ Expected: Custom words execute correctly
+
+: SQUARE DUP * ;
+5 SQUARE 25 = IF 42 EMIT ELSE 70 EMIT THEN CR
+
+: DOUBLE 2 * ;
+: QUAD DOUBLE DOUBLE ;
+3 QUAD 12 = IF 42 EMIT ELSE 70 EMIT THEN CR
+
+: ABS DUP 0< IF NEGATE THEN ;
+-5 ABS 5 = IF 42 EMIT ELSE 70 EMIT THEN CR
+5 ABS 5 = IF 42 EMIT ELSE 70 EMIT THEN CR
+
+bye
