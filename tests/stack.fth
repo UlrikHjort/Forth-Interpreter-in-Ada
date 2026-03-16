@@ -1,0 +1,15 @@
+\ Test: Stack operations
+\ Expected: Stack manipulation works correctly
+
+1 2 3 DROP DROP DROP
+42 EMIT CR
+
+5 DUP = IF 42 EMIT ELSE 70 EMIT THEN CR
+
+1 2 SWAP 1 = IF 42 EMIT ELSE 70 EMIT THEN DROP
+
+1 2 OVER 1 = IF 42 EMIT ELSE 70 EMIT THEN DROP DROP
+
+1 2 3 ROT 1 = IF 42 EMIT ELSE 70 EMIT THEN DROP DROP
+
+bye

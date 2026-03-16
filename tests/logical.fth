@@ -1,0 +1,9 @@
+\ Test: Logical operators
+\ Expected: Bitwise operations work correctly
+
+15 7 AND 7 = IF 42 EMIT ELSE 70 EMIT THEN CR
+15 7 OR 15 = IF 42 EMIT ELSE 70 EMIT THEN CR
+15 7 XOR 8 = IF 42 EMIT ELSE 70 EMIT THEN CR
+255 128 AND 128 = IF 42 EMIT ELSE 70 EMIT THEN CR
+
+bye
